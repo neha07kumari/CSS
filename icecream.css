@@ -1,0 +1,167 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+<title>CodePen - ice-cream</title>
+<style>
+body{
+  background-color: #98fb98;
+  
+}
+.container{
+   margin-top:250px;
+  text-align:center;
+  margin-left:80px;
+  margin-right:100px;
+  display:flex;
+  position:center;
+}
+.a{
+  font-size: 4.2rem;
+  width:8rem;
+  height:8rem;
+  margin:1rem;
+  bottom:200px;
+  position:relative;
+  display:inline-block;
+}
+.icecream{
+  width:150px;
+  height:300px;
+  background:linear-gradient(to right,#ffa500,#ff8c00, #ff4500 70%);
+  margin-left:600px;
+  margin-top:0;
+  border-radius: 2rem 2rem .7rem .7rem;
+}
+.icecream:hover{
+  background:linear-gradient(to bottom,yellow, #ff00ff, #800080);
+  
+}
+.circle{
+  background-color:#98fb98;
+  width:60px;
+  height:80px;
+  border-radius:50%;
+  margin-left:590px;
+  margin-top:-8px;
+}
+.c1{
+  background-color:#98fb98;
+  width:65px;
+  height:50px;
+ border-radius:5rem 5rem 15rem 10rem;
+  margin-left:618px;
+  margin-top:-5px;
+}
+.rect{
+  background-color:red;
+  width:120px;
+  height:40px;
+  border-radius:50%;
+  margin-left:600px;
+  margin-top:10px;
+}
+.mouth{
+  background-color:red;
+  width:60px;
+  height:40px;
+  margin-top:200px;
+  margin-left:650px;
+  border-radius:0 0 25px 25px; 
+  -webkit-transform-origin:50%;
+  -webkit-animation:blink 3s infinite;
+}
+
+.nose{
+  background-color:red;
+  width:18px;
+  height:40px;
+  margin-top:140px;
+  margin-left:670px;
+  border-radius:0 0 30px 30px; 
+}
+.stick{
+  width:30px;
+  height:160px;
+  background:linear-gradient(to right,#fff8dc,#ffdead,saddlebrown);
+  border-radius:0 0 .2rem .2rem;
+  margin-bottom:100px;
+  margin-top:300px;
+  margin-left:660px;
+  
+}
+*{
+  position:absolute;
+}
+.eyes{
+  width:120px;
+  height:200px;
+  top:95px;
+  left:620px;
+}
+.eye{
+  background-color:red;
+  width:20px;
+  height:20px;
+  border-radius: 50%;
+  
+}
+.eye-left{
+  left:15px;
+  top:22px;
+  -webkit-transform-origin:50%;
+  -webkit-animation:blink 2s infinite;
+}
+.eye-right{
+  right:15px;
+  top:22px;
+  -webkit-transform-origin:50%;
+  -webkit-animation:blink 2.5s infinite;
+}
+
+@-webkit-keyframes blink {
+    0%, 100% {
+        transform: scale(.8, .04);
+    }
+    5%,
+    95% {
+        transform: scale(.8, .8);
+    }
+}
+</style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body translate="no">
+<body>
+<div class="container">
+<div class="a">
+<div class="rect"></div>
+<div class="icecream"></div>
+<div class="circle"></div>
+<div class="c1"></div>
+<div class="nose"></div>
+<div class="mouth"></div>
+<div class="stick">
+</div>
+<div class="eyes">
+<div class="eye eye-left"></div>
+<div class="eye eye-right"></div>
+</div>
+</div>
+</div>
+</body>
+</body>
+</html>
