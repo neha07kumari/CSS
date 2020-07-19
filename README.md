@@ -4,4 +4,4 @@
 ## 2. Ice-cream
 ### This ice-cream is made using pure css.
 ## 3.Sheep
-### This cartoonic sheep is created using pure css.
+### This cartoon character "sheep" is created using pure css.
