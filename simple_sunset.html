@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+<title>CodePen - A Pen by  Neha Kumari</title>
+<style>
+body{
+  background-color:#ccccff;
+  background-repeat:no-repeat;
+  height:100%;
+  width:auto;
+  overflow-y:hidden;
+  animation:sky 5.5s 2s forwards;
+}
+@keyframes sky{
+  50%{
+    background-color:#ffd700;
+  }
+  65%{
+    background-color:#ffb90f;
+  }
+   85%{
+    background-color:	#6495ED;
+  }
+   100%{
+    background-color:#191970;
+  }
+}
+.tree{
+  width:30px;
+  height:380px;
+  background-color:	#D2691E;
+  margin-left:500px;
+  margin-top:340px;
+}
+.moon{
+  background-color:transparent;
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  position:absolute;
+  box-shadow: -20px 10px white;
+  margin-left:40px;
+  margin-top:-80px;
+  opacity:0;
+  animation:night 0.8s 7s forwards;
+}
+@keyframes night{
+  100%{
+    opacity:1;
+  }
+}
+.branch{
+  background-color:#D2691E;
+  width:10px;
+  height:70px;
+  margin-left:40px;
+  transform:rotate(35deg);
+}
+.tree-leaf1{
+  width:350px;
+  height:350px;
+  background-color:#006400;
+  border-radius:50%;
+  margin-left:350px;
+  margin-top:-728px;
+  position:relative;
+}
+
+.tree-leaf2{
+  width:300px;
+  height:300px;
+  background-color:#006400;
+  border-radius:50%;
+  margin-left:280px;
+  margin-top:-280px;
+  display:flex;
+}
+.tree-leaf3{
+  width:300px;
+  height:300px;
+  background-color:#006400;
+  border-radius:50%;
+  margin-left:460px;
+  margin-top:-280px;
+  display:flex;
+}
+.sun{
+  z-index:100;
+  width:100px;
+  height:100px;
+  background:linear-gradient(yellow,orange,orangered);
+  border-radius:50%;
+  margin-left:970px;
+  box-shadow:0 0 5px 0px  yellow;
+  margin-top:-386px;
+  animation:sunset 12s forwards;
+  -webkit-animation: cssAnimation 6s forwards; 
+    animation: cssAnimation 6s forwards;
+}
+@keyframes cssAnimation {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+@-webkit-keyframes cssAnimation {
+    0%   {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes sunset{
+  100%{
+    transform:translateY(750px);
+  }
+}
+.grassrec{
+  width:100%;
+  height:70px;
+  background-color:green;
+  margin-top:560px;
+}
+.g1{
+  width:90px;
+  height:70px;
+  border-radius:50%;
+  background-color:green;
+  margin-top:-100px;
+}
+.g2{
+  width:150px;
+  height:100px;
+  border-radius:50%;
+  background-color:green;
+  margin-top:-100px;
+  margin-left:80px;
+}
+.g3{
+  width:60px;
+  height:70px;
+  border-radius:50%;
+  background-color:green;
+  margin-top:-100px;
+  margin-left:220px;
+}
+.g4{
+  width:260px;
+  height:130px;
+  border-radius:50%;
+  background-color:green;
+  margin-top:-80px;
+  margin-left:270px;
+}
+.g5{
+  width:160px;
+  height:130px;
+  border-radius:150px 150px 0 0 ;
+  background-color:green;
+  margin-top:-150px;
+  margin-left:525px;
+}
+.g6{
+  width:90px;
+  height:120px;
+  border-radius:150px 150px 0 0 ;
+  background-color:green;
+  margin-top:-100px;
+  margin-left:660px;
+}
+.g7{
+  width:260px;
+  height:130px;
+  border-radius:50%;
+  background-color:green;
+  margin-top:-120px;
+  margin-left:745px;
+}
+.g8{
+  width:150px;
+  height:100px;
+  border-radius:50%;
+  background-color:green;
+  margin-top:-110px;
+  margin-left:940px;
+  z-index:200;
+}
+#g8{
+  webkit-backface-visibility:hidden;
+  backface-visibiliy:hidden;
+}
+
+.g9{
+  width:180px;
+  height:130px;
+  border-radius:50%;
+  background-color:green;
+  margin-top:-130px;
+  margin-left:1090px;
+}
+
+
+.g10{
+  width:120px;
+  height:100px;
+  border-radius:50%;
+  background-color:green;
+  margin-top:-110px;
+  margin-left:1240px;
+}
+
+
+.g11{
+  width:170px;
+  height:100px;
+  border-radius:50%;
+  background-color:green;
+  margin-top:-95px;
+  margin-left:1335px;
+}
+</style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body translate="no">
+<body>
+<div class="tree">
+<div class="branch">
+</div></div>
+<div class="tree-leaf1"></div>
+<div class="tree-leaf2"></div>
+<div class="tree-leaf3"></div>
+<div class="sun"></div>
+<div class="moon"></div>
+<div class="grassrec"></div>
+<div class="g1"></div>
+<div class="g2"></div>
+<div class="g3"></div>
+<div class="g4"></div>
+<div class="g5"></div>
+<div class="g6"></div>
+<div class="g7"></div>
+<div class="g8"></div>
+<div class="g9"></div>
+<div class="g10"></div>
+<div class="g11"></div>
+</body>
+</body>
+</html>
