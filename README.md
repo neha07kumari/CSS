@@ -7,3 +7,5 @@
 ### This cartoon character "sheep" is created using pure css.
 ## 4.Simple-Sunset
 ### This is a simple sunset created using pure css.
+## 5.Dog
+### This is a simple face of the dog in pure css art.
